@@ -1,0 +1,35 @@
+/*#region UI: Header */
+.Header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 4rem;
+
+  .Header__logo {
+    align-items: center;
+  }
+
+  .Header__navigation {
+    align-items: center;
+    color: white;
+    display: flex;
+    height: 100%;
+    justify-content: flex-end;
+
+    .Header__navigation-item {
+      cursor: pointer;
+      display: grid;
+      font-size: 20px;
+      letter-spacing: 1px;
+      margin: 0 1rem;
+      padding: 1rem 2rem;
+      place-items: center;
+    }
+
+    .Header__sign-in {
+      background: #b958fc;
+      border-radius: 50px;
+    }
+  }
+}
+/*#endregion /UI: Header */
