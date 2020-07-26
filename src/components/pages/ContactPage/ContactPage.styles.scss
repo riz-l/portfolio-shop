@@ -1,5 +1,78 @@
 /*#region Page: ContactPage */
 .ContactPage {
+  display: flex;
+  height: 90vh;
+  justify-content: space-between;
   text-align: center;
+  padding: 2rem 10rem;
+
+  .ContactPage__container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    .ContactPage__information {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      height: 100%;
+      text-align: start;
+
+      .ContactPage__title {
+        color: white;
+        font-size: 75px;
+      }
+
+      .ContactPage__lead {
+        color: #c1c1c1;
+        font-size: 40px;
+        margin-top: -3.5rem;
+      }
+
+      p {
+        color: white;
+        font-size: 28px;
+        text-align: start;
+        width: 75%;
+      }
+
+      .ContactPage__contact-details {
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-top: 4rem;
+
+        .ContactPage__item-container {
+          align-items: flex-start;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          padding: 1rem 0;
+
+          .ContactPage__contact-title {
+            color: white;
+            font-size: 34px;
+            font-weight: 600;
+          }
+
+          .ContactPage__item {
+            color: #c1c1c1;
+            font-size: 28px;
+          }
+        }
+      }
+    }
+  }
+
+  .ContactPage__contact-image {
+    display: flex;
+    flex: 1;
+    height: 100%;
+    justify-content: end;
+    text-align: end;
+    margin-top: 10rem;
+  }
 }
 /*#endregion /Page: ContactPage */

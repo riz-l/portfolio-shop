@@ -38,6 +38,9 @@ function Header() {
             <span>Sign In</span>
           </div>
         </Link>
+        <div className="Header__navigation-item Header__cart">
+          <span>Checkout</span>
+        </div>
       </div>
     </div>
   );

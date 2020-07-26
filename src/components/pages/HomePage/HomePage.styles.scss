@@ -1,68 +1,109 @@
 /*#region Page: HomePage */
 .HomePage {
+  align-items: center;
   display: flex;
-  justify-content: space-between;
-  text-align: center;
-  padding: 1rem 2rem;
-  margin: 1rem 4rem;
+  margin: auto;
+  min-height: 80vh;
+  width: 80%;
 
   .HomePage__introduction {
-    display: flex;
     flex: 1;
-    flex-direction: column;
-    height: 100%;
-    margin-top: 4rem;
-    text-align: start;
 
-    .HomePage__title {
+    h1 {
       color: white;
-      font-size: 60px;
-      font-weight: 600;
+      font-size: 80px;
+      font-weight: 700;
     }
 
-    .HomePage__lead {
+    p {
       color: #c1c1c1;
-      font-size: 38px;
-      margin-top: -1rem;
-      width: 50%;
+      font-size: 40px;
     }
+  }
 
-    .HomePage__button {
-      background-color: #bb56fc;
-      cursor: pointer;
-      margin-top: 4rem;
-      width: 170px;
+  .HomePage__cta {
+    padding: 50px 0 0 0;
 
-      display: flex;
+    .HomePage__cta-button {
       align-items: center;
+      background: #894ea5;
+      border-radius: 50px;
+      cursor: pointer;
+      display: flex;
+      height: 65px;
       justify-content: center;
+      width: 160px;
 
       span {
-        display: inline-block;
         color: white;
-        font-size: 24px;
-        font-weight: 700;
-        margin: 0 auto;
-        padding: 1rem 2rem;
-      }
-
-      &:hover {
-        background-color: #9744ca;
-        transition: all 200ms ease-in-out;
+        font-size: 28px;
+        font-weight: 600;
+        letter-spacing: 1px;
       }
     }
   }
 
-  .HomePage__hero-image {
-    align-items: center;
+  .HomePage__image {
     flex: 1;
-    height: 100%;
+    display: flex;
     justify-content: center;
-    text-align: center;
+    height: 60vh;
 
     svg {
-      height: 500px;
+      height: 100%;
+      animation: drop 1.5s ease;
     }
   }
 }
+
+@keyframes drop {
+  0% {
+    opacity: 0;
+    transform: translateY(-80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+/*#region Media Queries */
+@media screen and (max-width: 1024px) {
+  .HomePage {
+    flex-direction: column;
+  }
+
+  .HomePage__introduction {
+    text-align: center;
+
+    .HomePage__introduction-text {
+      text-align: center;
+
+      h1 {
+        font-size: 34px;
+      }
+
+      p {
+        font-size: 24px;
+      }
+    }
+
+    .HomePage__cta {
+      padding: 10px 0 0 0;
+
+      .HomePage__cta-button {
+        bottom: 5%;
+        right: 50%;
+        transform: translate(50%, 5%);
+        width: 50%;
+      }
+    }
+  }
+
+  .HomePage__image svg {
+    height: 80%;
+    margin-top: 2rem;
+  }
+}
+/*#endregion /Media Queries */
 /*#endregion /Page: HomePage */

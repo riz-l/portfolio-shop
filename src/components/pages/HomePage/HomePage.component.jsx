@@ -12,13 +12,17 @@ function HomePage() {
   return (
     <div className="HomePage">
       <div className="HomePage__introduction">
-        <h1 className="HomePage__title">rizji keyboards</h1>
-        <span className="HomePage__lead">Find everything you need here.</span>
-        <div className="HomePage__button">
-          <span>Sign Up</span>
+        <div className="HomePage__introduction-text">
+          <h1>rizji keyboards</h1>
+          <p>Keyboards by fanatics, for fanatics.</p>
+        </div>
+        <div className="HomePage__cta">
+          <div className="HomePage__cta-button">
+            <span>Sign Up</span>
+          </div>
         </div>
       </div>
-      <div className="HomePage__hero-image">
+      <div className="HomePage__image">
         <Hero />
       </div>
     </div>
