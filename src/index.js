@@ -1,6 +1,7 @@
 // Import: Dependencies
 import React from "react";
 import ReactDOM from "react-dom";
+import { BrowserRouter } from "react-router-dom";
 
 // Import: Service Worker
 import * as serviceWorker from "./serviceWorker";
@@ -10,14 +11,12 @@ import "./index.css";
 
 // Import: Components
 import App from "./App";
-import Header from "./components/UI/Header/Header.component";
-import Footer from "./components/UI/Footer/Footer.component";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Header />
-    <App />
-    <Footer />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById("root")
 );
