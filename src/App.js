@@ -6,12 +6,13 @@ import { Switch, Route } from "react-router-dom";
 import "./index.css";
 
 // Import: UI Components
-import Header from "./components/UI/Header/Header.component";
 import Footer from "./components/UI/Footer/Footer.component";
+import Header from "./components/UI/Header/Header.component";
 
 // Import: Page Components
 import ContactPage from "./components/pages/ContactPage/ContactPage.component";
 import HomePage from "./components/pages/HomePage/HomePage.component";
+import ShopPage from "./components/pages/ShopPage/ShopPage.component";
 
 // Component: App
 function App() {
@@ -21,6 +22,7 @@ function App() {
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route path="/contact" component={ContactPage} />
+        <Route path="/shop" component={ShopPage} />
       </Switch>
       <Footer />
     </div>
