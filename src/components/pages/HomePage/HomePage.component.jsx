@@ -1,5 +1,6 @@
 // Import: Dependencies
 import React from "react";
+import { Link } from "react-router-dom";
 
 // Import: Styling
 import "./HomePage.styles.scss";
@@ -16,11 +17,13 @@ function HomePage() {
           <h1>rizji keyboards</h1>
           <p>Keyboards by fanatics, for fanatics.</p>
         </div>
-        <div className="HomePage__cta">
-          <div className="HomePage__cta-button">
-            <span>Sign Up</span>
+        <Link to="/sign-in">
+          <div className="HomePage__cta">
+            <div className="HomePage__cta-button">
+              <span>Sign Up</span>
+            </div>
           </div>
-        </div>
+        </Link>
       </div>
       <div className="HomePage__image">
         <HomeImage />
