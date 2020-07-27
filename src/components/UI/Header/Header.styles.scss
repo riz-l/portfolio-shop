@@ -42,15 +42,19 @@
 
 /*#region Media Queries */
 @media screen and (max-width: 1024px) {
-  .Header__logo {
-    transform: scale(0.7);
-  }
+  .Header {
+    width: 90%;
 
-  .Header__navigation-item {
-    display: none;
+    .Header__logo {
+      transform: scale(0.7);
+    }
 
-    &.Header__cart {
+    .Header__navigation-item {
       display: none;
+
+      &.Header__cart {
+        display: none;
+      }
     }
   }
 }

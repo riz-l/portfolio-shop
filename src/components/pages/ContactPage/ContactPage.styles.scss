@@ -81,11 +81,26 @@
       text-align: center;
 
       h1 {
-        font-size: 34px;
+        font-size: 40px;
       }
 
       p {
-        font-size: 24px;
+        font-size: 20px;
+      }
+    }
+
+    .ContactPage__contact-details {
+      .ContactPage__contact-item {
+        .ContactPage__contact-item-title {
+          color: white;
+          font-size: 28px;
+        }
+
+        .ContactPage__contact-item-field {
+          color: #c1c1c1;
+          font-size: 20px;
+          padding-top: 1rem;
+        }
       }
     }
   }
