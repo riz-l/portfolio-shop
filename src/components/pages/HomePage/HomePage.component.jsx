@@ -5,7 +5,7 @@ import React from "react";
 import "./HomePage.styles.scss";
 
 // Import: Components
-import { ReactComponent as Hero } from "../../../assets/images/hero.svg";
+import { ReactComponent as HomeImage } from "../../../assets/images/hero.svg";
 
 // Page: HomePage
 function HomePage() {
@@ -23,7 +23,7 @@ function HomePage() {
         </div>
       </div>
       <div className="HomePage__image">
-        <Hero />
+        <HomeImage />
       </div>
     </div>
   );

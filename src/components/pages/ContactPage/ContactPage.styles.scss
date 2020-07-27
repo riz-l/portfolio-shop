@@ -1,78 +1,99 @@
 /*#region Page: ContactPage */
 .ContactPage {
+  align-items: center;
   display: flex;
-  height: 90vh;
-  justify-content: space-between;
-  text-align: center;
-  padding: 2rem 10rem;
+  margin: auto;
+  min-height: 80vh;
+  width: 80%;
 
-  .ContactPage__container {
-    align-items: center;
+  .ContactPage__introduction {
+    flex: 1;
+
+    h1 {
+      color: white;
+      font-size: 60px;
+      font-weight: 700;
+    }
+
+    p {
+      color: #c1c1c1;
+      font-size: 24px;
+    }
+  }
+
+  .ContactPage__contact-details {
     display: flex;
-    justify-content: center;
-    width: 100%;
+    flex-direction: column;
+    padding-top: 1rem;
 
-    .ContactPage__information {
+    .ContactPage__contact-item {
       display: flex;
       flex: 1;
       flex-direction: column;
-      height: 100%;
-      text-align: start;
+      padding: 1rem 0;
 
-      .ContactPage__title {
+      .ContactPage__contact-item-title {
         color: white;
-        font-size: 75px;
+        font-size: 34px;
       }
 
-      .ContactPage__lead {
+      .ContactPage__contact-item-field {
         color: #c1c1c1;
-        font-size: 40px;
-        margin-top: -3.5rem;
-      }
-
-      p {
-        color: white;
-        font-size: 28px;
-        text-align: start;
-        width: 75%;
-      }
-
-      .ContactPage__contact-details {
-        align-items: flex-start;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        margin-top: 4rem;
-
-        .ContactPage__item-container {
-          align-items: flex-start;
-          display: flex;
-          flex-direction: column;
-          justify-content: flex-start;
-          padding: 1rem 0;
-
-          .ContactPage__contact-title {
-            color: white;
-            font-size: 34px;
-            font-weight: 600;
-          }
-
-          .ContactPage__item {
-            color: #c1c1c1;
-            font-size: 28px;
-          }
-        }
+        font-size: 24px;
       }
     }
   }
 
-  .ContactPage__contact-image {
-    display: flex;
+  .ContactPage__image {
     flex: 1;
-    height: 100%;
-    justify-content: end;
-    text-align: end;
-    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+    height: 60vh;
+
+    svg {
+      height: 100%;
+      animation: drop 1.5s ease;
+    }
   }
 }
+
+@keyframes drop {
+  0% {
+    opacity: 0;
+    transform: translateY(-80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+/*#region Media Queries */
+@media screen and (max-width: 1024px) {
+  .ContactPage {
+    flex-direction: column;
+  }
+
+  .ContactPage__introduction {
+    text-align: center;
+
+    .ContactPage__introduction-text {
+      text-align: center;
+
+      h1 {
+        font-size: 34px;
+      }
+
+      p {
+        font-size: 24px;
+      }
+    }
+  }
+
+  .ContactPage__image svg {
+    height: 80%;
+    margin-top: 2rem;
+  }
+}
+/*#endregion /Media Queries */
 /*#endregion /Page: ContactPage */
