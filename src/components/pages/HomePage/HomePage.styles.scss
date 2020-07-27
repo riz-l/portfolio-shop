@@ -44,14 +44,14 @@
   }
 
   .HomePage__image {
-    flex: 1;
     display: flex;
-    justify-content: center;
+    flex: 1;
     height: 60vh;
+    justify-content: center;
 
     svg {
-      height: 100%;
       animation: drop 1.5s ease;
+      height: 100%;
     }
   }
 }
@@ -74,10 +74,10 @@
   }
 
   .HomePage__introduction {
-    text-align: center;
+    text-align: start;
 
     .HomePage__introduction-text {
-      text-align: center;
+      text-align: start;
 
       h1 {
         font-size: 40px;
@@ -92,9 +92,6 @@
       padding: 10px 0 0 0;
 
       .HomePage__cta-button {
-        bottom: 5%;
-        right: 50%;
-        transform: translate(50%, 5%);
         width: 50%;
       }
     }

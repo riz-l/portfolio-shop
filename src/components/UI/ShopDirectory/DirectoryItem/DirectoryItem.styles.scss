@@ -1,0 +1,73 @@
+/*#region UI: DirectoryItem */
+.DirectoryItem {
+  align-items: center;
+  border: 4px solid white;
+  display: flex;
+  flex: 1 1 auto;
+  height: 300px;
+  justify-content: center;
+  margin: 0 5px 10px;
+  min-width: 30%;
+  overflow: hidden;
+
+  &:hover {
+    cursor: pointer;
+
+    & .DirectoryItem__background-image {
+      filter: blur(2px);
+      -webkit-filter: blur(2px);
+      transition: all 300ms ease-in-out;
+    }
+
+    & .DirectoryItem__content {
+      opacity: 0.9;
+      transition: all 300ms ease-in;
+    }
+  }
+
+  &.large {
+    height: 380px;
+  }
+
+  &:first-child {
+    margin-right: 7.5px;
+  }
+
+  &:last-child {
+    margin-left: 7.5px;
+  }
+
+  .DirectoryItem__background-image {
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    transition: all 300ms ease-in-out;
+    width: 100%;
+  }
+
+  .DirectoryItem__content {
+    align-items: center;
+    background: #2c2b32;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    height: 90px;
+    justify-content: center;
+    opacity: 0.9;
+    padding: 1rem 2rem;
+    position: absolute;
+    transition: all 300ms ease-in-out;
+
+    .DirectoryItem__title {
+      color: white;
+      font-size: 32px;
+      font-weight: bold;
+    }
+  }
+}
+
+/*#region Media Queries */
+@media screen and (max-width: 1024px) {
+}
+/*#endregion /Media Queries */
+/*#endregion /UI: DirectoryItem */

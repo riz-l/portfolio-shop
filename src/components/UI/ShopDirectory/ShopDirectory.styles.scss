@@ -1,0 +1,16 @@
+/*#region UI: ShopDirectory */
+.ShopDirectory {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/*#region Media Queries */
+@media screen and (max-width: 1024px) {
+  .ShopDirectory {
+    flex-direction: column;
+  }
+}
+/*#endregion /Media Queries */
+/*#endregion /UI: ShopDirectory */
