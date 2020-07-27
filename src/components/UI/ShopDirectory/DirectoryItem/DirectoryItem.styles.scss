@@ -14,14 +14,19 @@
     cursor: pointer;
 
     & .DirectoryItem__background-image {
-      filter: blur(2px);
       -webkit-filter: blur(2px);
-      transition: all 300ms ease-in-out;
+      -moz-filter: blur(2px);
+      -o-filter: blur(2px);
+      -ms-filter: blur(2px);
+      filter: blur(2px);
+      width: 100%;
+      transform: scale(1.05);
     }
 
     & .DirectoryItem__content {
+      background: #894ea5;
       opacity: 0.9;
-      transition: all 300ms ease-in;
+      transition: all 300ms ease-in-out;
     }
   }
 

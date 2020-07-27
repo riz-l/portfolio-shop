@@ -1,0 +1,19 @@
+/*#region UI: SignInWindow */
+.SignInWindow {
+  align-items: center;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  justify-content: center;
+  width: 500px;
+
+  & h2 {
+    font-size: 32px;
+  }
+
+  & span {
+    font-size: 18px;
+  }
+}
+/*#endregion /UI: SignInWindow */

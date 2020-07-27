@@ -1,0 +1,36 @@
+/*#region Page: SignInPage */
+.SignInPage {
+  align-items: center;
+  animation: drop 1.5s ease;
+  display: flex;
+  margin: auto;
+  min-height: 80vh;
+  width: 80%;
+
+  .SignInPage__sign-in {
+    display: flex;
+    height: 100%;
+    width: 100%;
+
+    .SignInPage__sign-in-container {
+      margin: auto;
+    }
+  }
+}
+
+@keyframes drop {
+  0% {
+    opacity: 0;
+    transform: translateY(-80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+/*#region Media Queries */
+@media screen and (max-width: 1024px) {
+}
+/*#endregion /Media Queries */
+/*#endregion /Page: SignInPage */
